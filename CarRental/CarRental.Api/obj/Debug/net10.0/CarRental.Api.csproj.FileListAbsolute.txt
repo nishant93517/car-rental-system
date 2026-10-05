@@ -1,0 +1,208 @@
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.AssemblyReference.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfoInputs.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.CoreCompileInputs.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.staticwebassets.endpoints.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.deps.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.runtimeconfig.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-riscv64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\scopedcss\bundle\CarRental.Api.styles.css
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRenta.29374096.Up2Date
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\refint\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.genruntimeconfig.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\obj\Debug\net10.0\ref\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.exe
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.staticwebassets.endpoints.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.exe
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.deps.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.runtimeconfig.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-riscv64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.AssemblyReference.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfoInputs.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.CoreCompileInputs.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\scopedcss\bundle\CarRental.Api.styles.css
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRenta.29374096.Up2Date
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\refint\CarRental.Api.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.genruntimeconfig.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Api\obj\Debug\net10.0\ref\CarRental.Api.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.Development.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\appsettings.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.staticwebassets.endpoints.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.exe
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.deps.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.runtimeconfig.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Data.Sqlite.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\Microsoft.OpenApi.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.batteries_v2.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\browser-wasm\nativeassets\net9.0\e_sqlite3.a
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-riscv64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-s390x\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-riscv64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.AssemblyReference.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfoInputs.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.AssemblyInfo.cs
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.csproj.CoreCompileInputs.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.RazorAssemblyInfo.cs
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.sourcelink.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\scopedcss\bundle\CarRental.Api.styles.css
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.development.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\swae.build.ex.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRenta.29374096.Up2Date
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\refint\CarRental.Api.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.pdb
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\CarRental.Api.genruntimeconfig.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Api\obj\Debug\net10.0\ref\CarRental.Api.dll

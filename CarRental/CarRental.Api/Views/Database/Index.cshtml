@@ -1,0 +1,64 @@
+@model CarRental.Api.Models.DatabaseTableViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Database table · @Model.TableName</title>
+    <style>
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: Segoe UI, Arial, sans-serif; color: #172033; background: #f4f7fb; }
+        header { padding: 1.5rem max(1rem, calc((100% - 1150px) / 2)); color: #fff; background: #112d4e; }
+        header a { color: #c5f1ff; }
+        main { max-width: 1150px; margin: 1.5rem auto; padding: 0 1rem; }
+        .bar { display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+        select { padding: .65rem; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; font: inherit; }
+        .table-wrap { overflow: auto; background: #fff; border: 1px solid #e1e8f0; border-radius: 12px; }
+        table { border-collapse: collapse; width: 100%; min-width: 600px; }
+        th, td { padding: .75rem; border-bottom: 1px solid #e1e8f0; text-align: left; white-space: pre-wrap; }
+        th { position: sticky; top: 0; background: #eaf3f8; }
+        .muted { color: #64748b; }
+    </style>
+</head>
+<body>
+    <header>
+        <strong>Car Rental · Admin Database Viewer</strong>
+        <span style="float:right"><a href="/">Back to fleet</a></span>
+    </header>
+    <main>
+        <div class="bar">
+            <div>
+                <h1 style="margin-bottom:.25rem">@Model.TableName</h1>
+                <span class="muted">Showing up to 200 rows. Read-only view.</span>
+            </div>
+            <form method="get" action="/Database">
+                <label for="table">Choose table </label>
+                <select id="table" name="table" onchange="this.form.submit()">
+                    @foreach (var tableName in ViewBag.TableNames as IReadOnlyList<string> ?? Array.Empty<string>())
+                    {
+                        <option value="@tableName" selected="@(tableName == Model.TableName)">@tableName</option>
+                    }
+                </select>
+            </form>
+        </div>
+        <div class="table-wrap">
+            <table>
+                <thead><tr>@foreach (var column in Model.Columns) { <th>@column</th> }</tr></thead>
+                <tbody>
+                    @if (Model.Rows.Count == 0)
+                    {
+                        <tr><td colspan="@Model.Columns.Count" class="muted">No rows in this table.</td></tr>
+                    }
+                    else
+                    {
+                        @foreach (var row in Model.Rows)
+                        {
+                            <tr>@foreach (var value in row) { <td>@value</td> }</tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </main>
+</body>
+</html>

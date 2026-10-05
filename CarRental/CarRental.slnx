@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="CarRental.Api/CarRental.Api.csproj" />
+  <Project Path="CarRental.Core/CarRental.Core.csproj" />
+</Solution>

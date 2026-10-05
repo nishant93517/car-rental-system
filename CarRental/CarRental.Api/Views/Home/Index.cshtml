@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Car Rental</title>
+    <style>
+        :root { font-family: Inter, Segoe UI, Arial, sans-serif; color: #172033; background: #f4f7fb; }
+        body { margin: 0; }
+        header { padding: 2.5rem max(1.5rem, calc((100% - 1050px) / 2)); color: white; background: linear-gradient(120deg, #112d4e, #176b87); }
+        header h1 { margin: 0 0 .5rem; font-size: 2rem; }
+        header p { margin: 0; color: #d8edf5; }
+        main { max-width: 1050px; margin: 2rem auto; padding: 0 1.25rem; }
+        .layout { display: grid; grid-template-columns: 300px 1fr; gap: 1.25rem; align-items: start; }
+        .layout.single-layout { grid-template-columns: 1fr; }
+        .panel { padding: 1.25rem; background: white; border: 1px solid #e1e8f0; border-radius: 14px; box-shadow: 0 8px 24px #1720330a; }
+        h2 { margin: 0 0 1rem; font-size: 1.2rem; }
+        label { display: block; margin: .85rem 0 .35rem; font-size: .9rem; font-weight: 600; }
+        input { box-sizing: border-box; width: 100%; padding: .7rem; border: 1px solid #cbd5e1; border-radius: 8px; font: inherit; }
+        button { cursor: pointer; padding: .65rem .9rem; border: 0; border-radius: 8px; color: white; background: #176b87; font: inherit; font-weight: 600; }
+        form button { width: 100%; margin-top: 1rem; }
+        button:hover { background: #10536a; }
+        button.secondary { margin-left: .4rem; color: #176b87; background: #eaf3f8; }
+        button.danger { margin-left: .4rem; background: #b91c1c; }
+        .muted { color: #64748b; }
+        #message { min-height: 1.4rem; margin: 1rem 0; }
+        .cars { display: grid; gap: .75rem; }
+        .car { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 1rem; padding: 1rem; border: 1px solid #e1e8f0; border-radius: 10px; }
+        .car h3 { margin: 0 0 .35rem; }
+        .rate { display: flex; align-items: center; justify-content: flex-end; gap: .4rem; flex-wrap: wrap; font-weight: 700; }
+        .tag { display: inline-block; margin-top: .45rem; padding: .2rem .5rem; border-radius: 999px; font-size: .8rem; background: #dcfce7; color: #166534; }
+        .tag.unavailable { background: #fee2e2; color: #991b1b; }
+        .book-form { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(115px, 1fr)); gap: .5rem; width: 100%; margin-top: .8rem; }
+        .book-form label { margin: 0; font-size: .8rem; }
+        .book-form input { margin-top: .25rem; }
+        .booking { padding: .8rem; border-bottom: 1px solid #e1e8f0; }
+        .booking:last-child { border-bottom: 0; }
+        .booking button { margin-top: .5rem; }
+        .admin-bookings { display: grid; gap: .75rem; }
+        .admin-booking { padding: 1rem; border: 1px solid #e1e8f0; border-radius: 10px; }
+        .admin-booking p { margin: .35rem 0; }
+        .admin-setup { max-width: 1050px; margin: 1rem auto 0; padding: 1rem; border: 1px solid #fbbf24; border-radius: 10px; color: #172033; background: #fffbeb; }
+        .admin-setup p { margin: 0 0 .5rem; color: #78350f; }
+        @@media (max-width: 700px) { .layout { grid-template-columns: 1fr; } .car { grid-template-columns: 1fr; } .rate { justify-content: flex-start; } .book-form { grid-column: 1; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Car Rental</h1>
+        <p>Browse cars, manage the fleet, and check availability.</p>
+        <form asp-controller="Account" asp-action="Logout" method="post" style="margin-top:1rem">
+            @Html.AntiForgeryToken()
+            <button type="submit">Sign out</button>
+        </form>
+        @if (ViewData["CanBootstrapAdmin"] is bool canBootstrapAdmin && canBootstrapAdmin)
+        {
+            <div class="admin-setup">
+                <p><strong>No Admin account exists.</strong> In Development only, you can make this signed-in account the first Admin.</p>
+                <form asp-controller="Account" asp-action="SetupFirstAdmin" method="post">
+                    @Html.AntiForgeryToken()
+                    <button type="submit">Enable Admin controls for this account</button>
+                </form>
+            </div>
+        }
+        @if (User.IsInRole("Admin"))
+        {
+            <p><a href="/Database">View database tables</a></p>
+        }
+    </header>
+    <main>
+        <p id="message" class="muted" role="status">Loading cars...</p>
+        <div class="layout @(User.IsInRole("Admin") ? "admin-layout" : "single-layout")">
+            @if (User.IsInRole("Admin"))
+            {
+            <section class="panel">
+                <h2>Add a car</h2>
+                <form id="carForm">
+                    <label for="make">Make</label><input id="make" required maxlength="80" placeholder="Toyota" />
+                    <label for="model">Model</label><input id="model" required maxlength="80" placeholder="Corolla" />
+                    <label for="year">Year</label><input id="year" type="number" required min="1886" max="2100" placeholder="2024" />
+                    <label for="dailyRate">Daily rate (₹)</label><input id="dailyRate" type="number" required min="0.01" step="0.01" placeholder="4500.00" />
+                    <button type="submit">Add car</button>
+                </form>
+            </section>
+            }
+            <section class="panel">
+                <h2>Our cars</h2>
+                <div id="cars" class="cars"></div>
+            </section>
+        </div>
+        @if (User.IsInRole("Admin"))
+        {
+            <section class="panel" style="margin-top:1.25rem">
+                <h2>All bookings</h2>
+                <p class="muted">Review which customer booked each car and manage booking status. New bookings appear automatically every 30 seconds.</p>
+                <div id="adminBookings" class="admin-bookings">Loading bookings...</div>
+            </section>
+        }
+        @if (User.IsInRole("Member"))
+        {
+            <section class="panel" style="margin-top:1.25rem">
+                <h2>My bookings</h2>
+                <div id="myBookings" class="cars">Loading bookings...</div>
+            </section>
+        }
+    </main>
+    <script>
+        const carsElement = document.getElementById('cars');
+        const messageElement = document.getElementById('message');
+        const inrCurrency = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR' });
+        const isAdmin = @(User.IsInRole("Admin").ToString().ToLowerInvariant());
+        const isMember = @(User.IsInRole("Member").ToString().ToLowerInvariant());
+
+        async function loadCars() {
+            try {
+                const response = await fetch('/api/cars');
+                if (!response.ok) throw new Error('Unable to load cars.');
+                const cars = await response.json();
+                carsElement.replaceChildren();
+                if (cars.length === 0) carsElement.textContent = 'No cars added yet.';
+                for (const car of cars) {
+                    const card = document.createElement('article');
+                    card.className = 'car';
+                    let bookingForm = null;
+                    const info = document.createElement('div');
+                    const name = document.createElement('h3');
+                    name.textContent = `${car.year} ${car.make} ${car.model}`;
+                    const status = document.createElement('span');
+                    status.className = car.isAvailable ? 'tag' : 'tag unavailable';
+                    status.textContent = car.isAvailable ? 'Available' : 'Unavailable';
+                    info.append(name, status);
+                    const controls = document.createElement('div');
+                    controls.className = 'rate';
+                    controls.append(document.createTextNode(`${inrCurrency.format(Number(car.dailyRate))} / day `));
+                    if (@(User.IsInRole("Admin").ToString().ToLowerInvariant())) {
+                        const button = document.createElement('button');
+                        button.textContent = car.isAvailable ? 'Set unavailable' : 'Set available';
+                        button.addEventListener('click', () => setAvailability(car.id, !car.isAvailable));
+                        controls.append(button);
+
+                        const editButton = document.createElement('button');
+                        editButton.className = 'secondary';
+                        editButton.textContent = 'Edit';
+                        editButton.addEventListener('click', () => showEditForm(card, controls, car));
+                        controls.append(editButton);
+
+                        const deleteButton = document.createElement('button');
+                        deleteButton.className = 'danger';
+                        deleteButton.textContent = 'Delete';
+                        deleteButton.addEventListener('click', () => deleteCar(car.id));
+                        controls.append(deleteButton);
+                    } else if (isMember) {
+                        bookingForm = document.createElement('form');
+                        bookingForm.className = 'book-form';
+                        const today = new Date().toISOString().slice(0, 10);
+                        const startInput = document.createElement('input');
+                        startInput.type = 'date'; startInput.required = true; startInput.min = today;
+                        startInput.setAttribute('aria-label', 'Booking start date');
+                        const endInput = document.createElement('input');
+                        endInput.type = 'date'; endInput.required = true; endInput.min = today;
+                        endInput.setAttribute('aria-label', 'Booking end date');
+                        startInput.addEventListener('change', () => { endInput.min = startInput.value || today; });
+                        const startLabel = document.createElement('label'); startLabel.textContent = 'Start date'; startLabel.append(startInput);
+                        const endLabel = document.createElement('label'); endLabel.textContent = 'End date'; endLabel.append(endInput);
+                        const bookButton = document.createElement('button');
+                        bookButton.type = 'submit'; bookButton.textContent = 'Book car';
+                        bookingForm.append(startLabel, endLabel, bookButton);
+                        bookingForm.addEventListener('submit', event => createBooking(event, car.id, startInput.value, endInput.value));
+                    }
+                    card.append(info, controls);
+                    if (bookingForm) card.append(bookingForm);
+                    carsElement.append(card);
+                }
+                messageElement.textContent = `${cars.length} car${cars.length === 1 ? '' : 's'} in the fleet.`;
+            } catch (error) {
+                messageElement.textContent = error.message;
+            }
+        }
+
+        async function setAvailability(id, isAvailable) {
+            const response = await fetch(`/api/cars/${id}/availability`, {
+                method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ isAvailable })
+            });
+            if (!response.ok) { messageElement.textContent = 'Could not update the car.'; return; }
+            await loadCars();
+        }
+
+        function showEditForm(card, controls, car) {
+            const form = document.createElement('form');
+            form.style.cssText = 'grid-column:1 / -1;display:grid;grid-template-columns:repeat(2,minmax(100px,1fr));gap:.5rem;margin-top:.8rem;width:100%';
+            const fields = [
+                ['make', 'Make', 'text', car.make],
+                ['model', 'Model', 'text', car.model],
+                ['year', 'Year', 'number', car.year],
+                ['dailyRate', 'Daily rate', 'number', car.dailyRate]
+            ];
+            const inputs = {};
+            for (const [key, label, type, value] of fields) {
+                const input = document.createElement('input');
+                input.name = key;
+                input.type = type;
+                input.value = value;
+                input.required = true;
+                if (key === 'year') { input.min = '1886'; input.max = String(new Date().getFullYear() + 1); }
+                if (key === 'dailyRate') { input.min = '0.01'; input.step = '0.01'; }
+                input.setAttribute('aria-label', label);
+                inputs[key] = input;
+                form.append(input);
+            }
+            const saveButton = document.createElement('button');
+            saveButton.type = 'submit';
+            saveButton.textContent = 'Save changes';
+            const cancelButton = document.createElement('button');
+            cancelButton.type = 'button';
+            cancelButton.className = 'secondary';
+            cancelButton.textContent = 'Cancel';
+            cancelButton.addEventListener('click', loadCars);
+            form.append(saveButton, cancelButton);
+            card.append(form);
+            controls.hidden = true;
+            form.addEventListener('submit', async event => {
+                event.preventDefault();
+                const response = await fetch(`/api/cars/${car.id}`, {
+                    method: 'PUT', headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        make: inputs.make.value,
+                        model: inputs.model.value,
+                        year: Number(inputs.year.value),
+                        dailyRate: Number(inputs.dailyRate.value)
+                    })
+                });
+                if (!response.ok) { messageElement.textContent = 'Could not update car. Check all fields and try again.'; return; }
+                await loadCars();
+            });
+        }
+
+        async function deleteCar(id) {
+            if (!confirm('Delete this car? This cannot be undone.')) return;
+            const response = await fetch(`/api/cars/${id}`, { method: 'DELETE' });
+            if (!response.ok) { messageElement.textContent = 'Could not delete car.'; return; }
+            await loadCars();
+        }
+
+        async function createBooking(event, carId, startDate, endDate) {
+            event.preventDefault();
+            const response = await fetch(`/api/cars/${carId}/bookings`, {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ startDate, endDate })
+            });
+            const result = response.status === 204 ? null : await response.json().catch(() => null);
+            if (!response.ok) {
+                messageElement.textContent = result?.message || 'Could not book this car. Check the dates and try again.';
+                return;
+            }
+            messageElement.textContent = `Booking confirmed. Total: ${inrCurrency.format(Number(result.totalPrice))}.`;
+            await loadBookings();
+        }
+
+        async function loadBookings() {
+            const bookingsElement = document.getElementById('myBookings');
+            if (!bookingsElement || !isMember) return;
+            const response = await fetch('/api/bookings/mine');
+            if (!response.ok) { bookingsElement.textContent = 'Could not load bookings.'; return; }
+            const bookings = await response.json();
+            bookingsElement.replaceChildren();
+            if (!bookings.length) { bookingsElement.textContent = 'You have no bookings yet.'; return; }
+            for (const booking of bookings) {
+                const row = document.createElement('article');
+                row.className = 'booking';
+                const details = document.createElement('strong');
+                details.textContent = booking.carName;
+                const dates = document.createElement('div');
+                dates.textContent = `${booking.startDate} to ${booking.endDate} · ${inrCurrency.format(Number(booking.totalPrice))} · ${booking.status}`;
+                row.append(details, dates);
+                if (booking.status === 'Confirmed' && booking.startDate > new Date().toISOString().slice(0, 10)) {
+                    const cancelButton = document.createElement('button');
+                    cancelButton.className = 'danger';
+                    cancelButton.textContent = 'Cancel booking';
+                    cancelButton.addEventListener('click', () => cancelBooking(booking.id));
+                    row.append(cancelButton);
+                }
+                bookingsElement.append(row);
+            }
+        }
+
+        async function loadAdminBookings() {
+            const bookingsElement = document.getElementById('adminBookings');
+            if (!bookingsElement || !isAdmin) return;
+            const response = await fetch('/api/admin/bookings');
+            if (!response.ok) { bookingsElement.textContent = 'Could not load bookings.'; return; }
+            const bookings = await response.json();
+            bookingsElement.replaceChildren();
+            if (!bookings.length) { bookingsElement.textContent = 'There are no bookings yet.'; return; }
+            for (const booking of bookings) {
+                const card = document.createElement('article');
+                card.className = 'admin-booking';
+                const car = document.createElement('strong');
+                car.textContent = booking.carName;
+                const customer = document.createElement('p');
+                customer.textContent = `Customer: ${booking.customerEmail}`;
+                const dates = document.createElement('p');
+                dates.textContent = `Dates: ${booking.startDate} to ${booking.endDate}`;
+                const total = document.createElement('p');
+                total.textContent = `Total: ${inrCurrency.format(Number(booking.totalPrice))} · Status: ${booking.status}`;
+                const created = document.createElement('p');
+                created.className = 'muted';
+                created.textContent = `Booked: ${new Date(booking.createdAtUtc).toLocaleString()}`;
+                card.append(car, customer, dates, total, created);
+                if (booking.status === 'Confirmed') {
+                    const cancelButton = document.createElement('button');
+                    cancelButton.className = 'danger';
+                    cancelButton.textContent = 'Cancel booking';
+                    cancelButton.addEventListener('click', () => cancelAdminBooking(booking.id));
+                    card.append(cancelButton);
+                }
+                bookingsElement.append(card);
+            }
+        }
+
+        async function cancelAdminBooking(id) {
+            if (!confirm('Cancel this booking?')) return;
+            const response = await fetch(`/api/bookings/${id}`, { method: 'DELETE' });
+            if (!response.ok) { messageElement.textContent = 'Could not cancel this booking.'; return; }
+            messageElement.textContent = 'Booking cancelled.';
+            await loadAdminBookings();
+        }
+
+        async function cancelBooking(id) {
+            if (!confirm('Cancel this booking?')) return;
+            const response = await fetch(`/api/bookings/${id}`, { method: 'DELETE' });
+            if (!response.ok) {
+                const result = await response.json().catch(() => null);
+                messageElement.textContent = result?.message || 'Could not cancel this booking.';
+                return;
+            }
+            messageElement.textContent = 'Booking cancelled.';
+            await loadBookings();
+        }
+
+        const carForm = document.getElementById('carForm');
+        carForm?.addEventListener('submit', async event => {
+            event.preventDefault();
+            const response = await fetch('/api/cars', {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    make: document.getElementById('make').value,
+                    model: document.getElementById('model').value,
+                    year: Number(document.getElementById('year').value),
+                    dailyRate: Number(document.getElementById('dailyRate').value)
+                })
+            });
+            if (!response.ok) { messageElement.textContent = 'Please check the car details and try again.'; return; }
+            event.target.reset();
+            await loadCars();
+        });
+
+        loadCars();
+        loadBookings();
+        loadAdminBookings();
+        if (isAdmin) window.setInterval(loadAdminBookings, 30000);
+    </script>
+</body>
+</html>

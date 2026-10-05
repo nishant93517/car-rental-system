@@ -1,0 +1,34 @@
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.deps.json
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfoInputs.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.csproj.CoreCompileInputs.cache
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\refint\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\task\CarRental\CarRental.Core\obj\Debug\net10.0\ref\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.deps.json
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfoInputs.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfo.cs
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.csproj.CoreCompileInputs.cache
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\refint\CarRental.Core.dll
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Om.Bangar\Desktop\CarRental\CarRental.Core\obj\Debug\net10.0\ref\CarRental.Core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.deps.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\bin\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfoInputs.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.AssemblyInfo.cs
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.csproj.CoreCompileInputs.cache
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.sourcelink.json
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\refint\CarRental.Core.dll
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\CarRental.Core.pdb
+C:\Users\Nishant.Khatri\Downloads\CarRental 2\CarRental\CarRental.Core\obj\Debug\net10.0\ref\CarRental.Core.dll

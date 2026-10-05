@@ -1,0 +1,24 @@
+CREATE TABLE IF NOT EXISTS Cars (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Make TEXT NOT NULL CHECK (length(Make) <= 80),
+    Model TEXT NOT NULL CHECK (length(Model) <= 80),
+    Year INTEGER NOT NULL,
+    DailyRate NUMERIC NOT NULL CHECK (DailyRate > 0),
+    IsAvailable INTEGER NOT NULL DEFAULT 1
+);
+
+CREATE TABLE IF NOT EXISTS Bookings (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    CarId INTEGER NOT NULL,
+    UserId TEXT NOT NULL,
+    StartDate TEXT NOT NULL,
+    EndDate TEXT NOT NULL,
+    TotalPrice NUMERIC NOT NULL,
+    Status TEXT NOT NULL DEFAULT 'Confirmed',
+    CreatedAtUtc TEXT NOT NULL,
+    FOREIGN KEY (CarId) REFERENCES Cars (Id) ON DELETE RESTRICT,
+    FOREIGN KEY (UserId) REFERENCES AspNetUsers (Id) ON DELETE RESTRICT
+);
+
+CREATE INDEX IF NOT EXISTS IX_Bookings_CarId_StartDate_EndDate
+    ON Bookings (CarId, StartDate, EndDate);
